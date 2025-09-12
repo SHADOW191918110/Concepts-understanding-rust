@@ -1,13 +1,17 @@
-use std::io;
-
 fn main() {
-    let mut input = String::new();
-
-    println!("Please enter some input:");
-
-    io::stdin()
-        .read_line(&mut input)
-        .expect("Failed to read line");
-
-    println!("You entered: {}", input.trim());
+    // Original integer variable declaration
+    let x = 42;
+    println!("x: {}", x);
+    
+    // Variable reassignment (shadowing) within the same scope
+    let x = "forty-two";
+    println!("x: {}", x);
+    
+    {
+        // Creating a nested scope where 'x' has a new binding
+        let x = 42.5;
+        println!("x: {}", x);
+        
+        // Leaving the inner scope - original bindings restored
+    }
 }
