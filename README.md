@@ -66,7 +66,7 @@ A pattern matching construct that allows you to conditionally bind variables bas
 
 ### sum
 
-An enum type wrapper around Option <T> which can be either Some (value) or None.
+An enum type wrapper around Option ```<T>``` which can be either Some (value) or None.
 
 ### range
 
