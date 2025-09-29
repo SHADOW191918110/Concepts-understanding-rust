@@ -26,7 +26,7 @@
 // println!("{:?}",aa);
 // }
 
-use std::collections::{hash_map, HashMap};
+// use std::collections::{hash_map, HashMap};
 
 
 fn main(){
@@ -38,13 +38,8 @@ fn main(){
 
 //     println!("{:?}",hashmappp); 
 
-    let mut var1 = "shadow";
-
-    let get = &var1[0..5];
+    let mut var1 = vec![1, 2, 3, 4, 5, 6,0];
+    let get: &Vec<i32> = &var1.iter().map(|f|{f*f}).collect();
     print!("{:?}",get) ;
 
-
-
 }
-
-
